@@ -1,0 +1,12 @@
+In forms 
+
+ form action="" method = 'get' ></form>
+    we have diffrent methods for forms like get,post etc.
+    GET -> in get method the request to the server is idempotent means only the first request is transfer to the server even thogh how many times we have to refresh the page
+    POST-> every request is transfered to the server
+
+
+    date time local for forms -> it will set time to the user contry time ,not to the server time
+         <input type="datetime-local"><br>
+
+    

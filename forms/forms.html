@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset> 
+        <!-- used to define the area of form -->
+        <legend>Registration form</legend>  <!--Used to give the name on the form-->
+        <form action="register.html" method="get">
+
+            <br><br>
+            <!-- get method is used to transfer the request only one  -->
+
+            <label for="fname">First name:</label>
+            <input type="text" id="fname">
+            <br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" name="First" id="lname">
+            <br><br>
+            <!-- <input type="submit"name="register"> -->
+
+            <label>
+                password:
+                <input type="password">
+            </label>
+            <br><br>
+            
+            
+            <label for="">Gender:
+                <input type="radio" name="gender" checked>Male
+                <input type="radio" name="gender">Female
+
+            </label>
+
+<br><br>
+
+            <label id="cek">
+                Hobbies:
+                <input type="checkbox" name="" id="cek">singing
+                <input type="checkbox" name="" id="cek">dancing
+                <input type="checkbox" name="" id="cek">drawing
+            </label>
+            <br><br>
+            <label>
+                DOB:  <input type="datetime-local"><br>
+            </label>
+<br><br>
+            <label>
+                Mobile no.  <input type="number"><br>
+            </label>
+            <br><br>
+            <label>
+                Email.  <input type="email"><br>
+            </label>
+            <br><br>
+            <label>
+                Color: <input type="color" name="" id="">
+            </label>
+            <br><br>
+
+            <label>
+                File: <input type="file">
+            </label>
+            <br><br>
+
+            <label>
+                Search: <input type="search">
+            </label>
+            <br><br>
+
+            <label>
+                URL: <input type="url">
+            </label>
+            <br><br>
+
+            <label>
+                Country: 
+                <select name="country" id="">
+                    <option value="india" selected >India</option>
+                    <option value="USA">USA</option>
+                    <option value="Russia">Russia</option>
+                    <option value="australia">Austraia</option>
+                    <option value="Europe">Europe</option>
+                </select>
+            </label>
+            <br><br>
+
+            <label>
+                Dist:
+                <input list="technologies">
+                <datalist id="technologies">
+                    <option value="india">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Russia">Russia</option>
+                    <option value="australia">Austraia</option>
+                    <option value="Europe">Europe</option>
+                </datalist>
+            </label>
+            <br><br>
+
+
+            <input type="submit" name="register">
+            <input type="reset">
+        </form>
+    </fieldset>
+</body>
+</html>
