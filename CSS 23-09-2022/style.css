@@ -1,0 +1,59 @@
+@import url("style2.css");
+
+/* apply @import url("name of css file that is to be imported") in that css file which is linked with the html file  */
+
+body{
+    background-color: rgba(255, 255, 0, 0.192);
+}
+p{
+    margin-left: 10px;
+}
+h2{
+    background-color: aqua;
+    padding: 10px;
+}
+.same{
+    font-size: medium;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section p{
+    background-color: yellow;
+}
+input{
+    margin: 10px;
+}
+input[type="text"]{
+    background-color: aquamarine;
+}
+textarea{
+    background-color: blue;
+    color: white;
+}
+::placeholder{
+    color: white;
+    padding:20px;
+}
+label span:hover{
+    color: red;
+    /* font-weight: bolder; */
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    transition-delay: 0.1s;
+    padding: 10px;
+}
+
+#s2{
+    background-color: blueviolet;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section>h2{
+font-size: xx-large;
+background-color: black;
+color: white;
+text-align: center;
+}
