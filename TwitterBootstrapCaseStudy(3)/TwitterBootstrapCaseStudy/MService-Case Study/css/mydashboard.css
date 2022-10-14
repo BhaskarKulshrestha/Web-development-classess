@@ -1,0 +1,186 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+
+/*
+ * Global add-ons
+ */
+#d
+{
+	padding-top:50px;
+}
+.b
+{
+	padding-left:300px;
+}
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form
+{
+	border-color:white;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover
+{
+	background-color:transparent;
+}
+
+.navbar-inverse .navbar-toggle
+{
+	border-color:transparent;
+}
+/*
+ * Sidebar
+ */
+
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+.nav>li>a:focus,.nav>li>a:hover{
+/*background-color: #62b0ff;
+		color: #fff;*/
+
+background-color: #c0c0c0;
+		color: #fff;
+		
+}
+ .sidebar {
+    position: fixed;
+    top: 90px;
+    bottom: 0px;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content.*/
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .sidebar {
+     display: none;
+     }
+ 
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  background-color: #62b0ff;
+		color: #fff;
+ 
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+#b
+	{
+		padding-left:50px;
+	}
+	
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top:40px;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 10%;
+}
+
+@media (max-width: 767px) and (min-width:478px)
+{
+.sidebar {
+  display: none;
+}
+
+
+	#b
+	{
+		padding-left:50px;
+	}
+	
+#header .logo1 {
+		height:auto;
+		width:auto;
+		padding-left:320px;
+		margin: 0 auto;	
+	}
+}
+
+@media (max-width: 479px) and (min-width:0px) {
+	#b
+	{	padding-left:50px;}
+	#header .name
+	{
+	display:none;
+	}
+	*#d
+	{
+	padding-top:10px;
+	}
+	.sidebar {
+  display: none;
+}
+}

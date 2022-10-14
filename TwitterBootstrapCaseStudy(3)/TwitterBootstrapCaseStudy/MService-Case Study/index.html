@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>MService- Online Mobile Service</title>
+	
+	<!-- Main CSS file -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	 <link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="css/newstyle.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+
+    <script src="js/search.js"></script>
+	<script src="js/storage.js"></script>
+	<script src="js/loginValidate.js"></script>
+	 <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/icon/favicon.png">
+		
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
+</head>
+<body data-spy="scroll" data-target="#footer">
+
+	<!-- PRELOADER -->
+	<div id="st-preloader">
+		<div id="pre-status">
+			<div class="preload-placeholder"></div>
+		</div>
+	</div>
+	<!-- /PRELOADER -->
+
+	
+	<!-- HEADER -->
+	<header id="header">
+
+    
+		<nav class="navbar st-navbar navbar-fixed-top">
+		
+			<div class="container-fluid">
+		
+			 <div class="logo text-right" >
+          
+				 
+				 <button class="btn btn-xs  " data-toggle="modal" data-target="#myModal2" style="margin-top:10px;margin-top:10px;border-top-width: 1px;">
+                        <span class="glyphicon glyphicon-user"></span>&nbsp;Sign Up
+                  </button> 
+				 <button class="btn btn-xs" data-toggle="modal" data-target="#myModal1" style="margin-top:10px;border-top-width: 1px;">
+                        <span class="glyphicon glyphicon-log-in"></span>&nbsp;Login
+                  </button>
+			       
+			
+	         </div>
+	 
+	     
+	            
+    
+	   
+				
+				         
+			 	<div class="navbar-header">
+			 	
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#st-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+				    	<span class="icon-bar"></span>
+				    	<span class="icon-bar"></span>
+				    	<span class="icon-bar"></span>
+					</button>
+					<a class="logo1" style="background-color: white" href="Index.html"><img src="images/logo.png" alt=""></a>
+	          </div>
+	        
+ 
+             <div class="col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 pull-left">
+			          <form class="navbar-form" role="search" style="margin-top: 15px">
+                <div class="input-group">
+                    <input type="text" id="search" class="form-control" placeholder="Search">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="button" id="button" ><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div> 
+                </form>
+                </div>
+            
+                
+				
+			 	<div class="collapse navbar-collapse" id="st-navbar-collapse">
+			<div class="hidden-sm hidden-xs">
+					<ul class="nav navbar-nav navbar-right ">
+					
+   	    	<li><a href="#header">Home</a></li>
+				    	 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
+				          <ul class="dropdown-menu ">
+				            <li class="hover"><a href="#services1">SALES</a></li>
+				            <li class="hover"><a href="#services2">SERVICE</a></li>
+				            <li class="hover"><a href="#services3"> IN-STORE FACILITY</a></li>
+				         </ul>
+				        </li>
+				         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Pricing<span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li class="hover"><a href="#pricing1">BASIC</a></li>
+				            <li class="hover"><a href="#pricing2">SILVER</a></li>
+				            <li class="hover"><a href="#pricing3">GOLD</a></li>
+				           </ul>
+				        </li>
+				    
+				        <li><a href="#about-us">About Us</a></li>   
+						 <li><a href="#contact">Contact Us</a></li>    
+						  <li><a href="#blog">Blog</a></li>    </ul>
+				        </div>
+				      
+	<div class="visible-sm visible-xs">
+
+    <ul class="nav navbar-nav navbar-right ">
+   	    	<li><a href="#header">Home</a></li>
+				    	 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
+				          <ul class="dropdown-menu ">
+				            <li class="hover"><a href="#services1">SALES</a></li>
+				            <li class="hover"><a href="#services2">SERVICE</a></li>
+				            <li class="hover"><a href="#services3"> IN-STORE FACILITY</a></li>
+				         </ul>
+				        </li>
+				       
+				        <li><a href="#about-us">About Us</a></li>    </ul>
+				     </div> 
+		     </div>  
+		</div><!-- /.navbar-collapse -->
+		</nav>
+
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            
+            <p  id="myModalLabel">
+              Create your account 
+            </p>
+         </div>
+         <div class="modal-body">
+         <!-- action="contact.html--> 
+		  
+                   
+					
+	<form class="form-horizontal" role="form"  id="signupform">
+		<div >
+                    <div class="col-sm-9 col-sm-offset-3">                    
+                    <div style='font-size:small;color:red' id='msg' class="error">  </div>
+                    </div>
+         </div>
+	
+		  <div class="form-group">
+                    <label class="control-label col-sm-3 text-right" for="inputFname" >First Name</label>
+                    <div class="col-sm-9">
+                    <input type="text" id="inputFname" class="form-control" placeholder="Enter your First Name" onkeyup='validateFName()' >
+                    <div style='font-size:small;color:red' id='fn' class="error"></div>
+                    </div>
+         </div>
+		<div class="form-group">
+	        <label class="control-label col-sm-3 text-right" for="inputLname" >Last Name</label>
+	         <div class="col-sm-9">
+	        <input type="text" id="inputLname" class="form-control" placeholder="Enter your Last Name" onkeyup='validateLName()'>
+	        <div style='font-size:small;color:red' id='ln' class="error"></div>
+	        </div>
+        </div>
+        <div class="form-group">
+		<label class="control-label col-sm-3 text-right" for="inputMobNumber" >Mobile</label>
+		<div class="col-sm-9">
+        <input type="tel" id="inputMobNumber" class="form-control" placeholder="Enter your Mobile Number" onkeyup='validateMobile();'>
+		<div style='font-size:small;color:red' id='mb' class="error"></div>
+		</div>
+		</div>
+		
+		
+		
+		 <div class="form-group">
+		<label class="control-label col-sm-3 text-right" for="inputEmail" >Email address</label>
+		<div class="col-sm-9">
+        <input type="email" id="inputEmail" class="form-control" placeholder="Enter your Email address" onkeyup='validateEmail();'>
+        <div style='font-size:small;color:red' id='em' class="error">
+        </div>
+        </div>
+        </div>
+         <div class="form-group">
+			<label class="control-label col-sm-3 text-right" for="inputPassword">Password</label>
+			<div class="col-sm-9">
+				<input type="password" id="inputPassword" class="form-control" placeholder="Enter your Password" onkeyup='validatePassword()' >
+				 <div style='font-size:small;color:red' id='pwd' class="error"></div>
+			 </div>
+         </div>
+		  <div class="form-group">
+		 <div class="col-sm-9 col-sm-offset-3">
+			<button class="btn btn-lg btn-primary" onclick="setUserValue()" type="button">Create Account</button>
+			
+			
+			 <button type="submit" class=" btn btn-lg btn-default"
+               data-dismiss="modal" aria-hidden="true">
+                  Cancel
+            </button>
+			</div>
+			</div>
+          </form>
+	  </div>
+     </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+  </div> 
+ 
+      <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+           
+            <p  id="myModalLabel">
+               Login 
+            </p>
+         </div>
+         <div class="modal-body">
+             <form class="form-horizontal" role="form" id="loginform" >
+			 <div >
+                    <div class="col-sm-9 col-sm-offset-3">                    
+                    <div style='font-size:small;color:red' id='msg2' class="error">  </div>
+                    </div>
+         </div>
+		 <div class="form-group">
+		<label class="control-label col-sm-3 text-right" for="inputEmail"  >Email address</label>
+		<div class="col-sm-9">
+        <input type="email" id="inputEmail1" class="form-control" placeholder="Enter your Email address" onkeyup='resetMsg()'>
+        </div>
+        </div>
+         <div class="form-group">
+			<label class="control-label col-sm-3 text-right" for="inputPassword" >Password</label>
+			<div class="col-sm-9">
+			<input type="password" id="inputPassword1" class="form-control" placeholder="Enter your Password"  onkeyup='resetMsg()'>
+			</div>
+         </div>
+		 <div class="form-group">
+		 <div class="col-sm-9 col-sm-offset-3">
+			<button class="btn btn-lg btn-primary " onclick="getUserValue()" type="button">Login</button>
+			 <button type="submit" class=" btn btn-lg btn-default"
+               data-dismiss="modal" aria-hidden="true">
+                  Cancel
+            </button>
+			</div>
+		</div>
+        </form>     
+         </div>
+         </div>
+         </div>
+         </div>
+	</header>
+	<!-- /HEADER -->
+
+	<!-- SLIDER -->
+	<section id="slider" >
+		<div id="home-carousel" class="carousel slide" data-ride="carousel">			
+			<div class="carousel-inner">
+				<div class="item active" style="background-image: url(images/slider/01.jpg) ;" >
+					<div class="carousel-caption container">
+						<div class="row">
+							<div class="col-sm-7" >
+								<p style="color:white;" class="head">Sales</p>
+								<p style="color:white;">Simple, Fast and Assured Service and Customers can schedule pick-up order from most of the locations in Chennai.</p>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="item" style="background-image: url(images/slider/02.jpg)">
+					<div class="carousel-caption container">
+						<div class="row">
+							<div class="col-sm-7">
+								<p style="color:white;" class="head">Resale</p>
+								<p style="color:white;">Simple, Fast and Assured Service and Customers can schedule pick-up order from most of the locations in Chennai.</p>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="item" style="background-image: url(images/slider/03.jpg)">
+					<div class="carousel-caption container">
+						<div class="row">
+							<div class="col-sm-7">							
+								<p style="color:white;" class="head">Repair</p>
+								<p style="color:white;" >Simple, Fast and Assured Service and Customers can schedule pick-up order from most of the locations in Chennai.</p>
+							</div>
+						</div>
+					</div>					
+				</div>
+				
+				</div>
+				 <ol class="carousel-indicators" >
+			      <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+			      <li data-target="#home-carousel" data-slide-to="1"></li>
+			      <li data-target="#home-carousel" data-slide-to="2"></li>
+     		     </ol>
+				</div>		 <!--/-carousel--> 
+		
+    </section>
+	<!-- /SLIDER -->
+	
+	<!-- SERVICES -->
+	<section id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title">
+						<h1><strong>Services</strong></h1>
+						<span class="st-border"></span>
+					</div>
+				</div>
+
+				<div  class="col-md-4 col-sm-6 st-service" id="services1" >
+					<h2><i class="fa fa-mobile" ></i><strong>  Mobile Sales</strong></h2>
+					<p>We assure fast service and good quality mobiles which we sales. You have been provided with various Branded Mobiles like Samsung, Microsoft, Blackberry and so on.. where prices ranges from Rs 4,000 to 25,000. </p>
+				</div>
+
+				<div  class="col-md-4 col-sm-6 st-service" id="services2" >
+					<h2><i class="fa fa-cogs"></i><strong> Mobile Service and Resale </strong></h2>
+					<p>Scratch card of any  mobile can be replaced, Operating System Upgradation, Battery replacement and we help you in selling your old mobiles and replace it with new one.</p>
+				</div>
+
+				<div  class="col-md-4 col-sm-6 st-service" id="services3" >
+					<h2><i class="fa fa-cart-plus"></i><strong> In-Store facility</strong></h2>
+					<p>You can schedule an appointment and directly walk-in to store and interact with the team and we can repair your mobile within 2 hours. 24/7 you can call to our Toll Free Number - 1800 00 11 22 for any support.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /SERVICES -->
+
+	<!-- SPECIALITY -->
+	<section id="speciality">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title">
+						<h1><strong>Our Speciality</strong></h1>
+						<span class="st-border"></span>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 st-service">
+					<h2><i class="fa fa-dashboard"></i><strong> Swift and Spontaneous Service</strong></h2>
+					<p>You can call to our center and our representative would visit your place and resolve your issue on spot.</p>
+				</div>
+
+				<div class="col-md-4 col-sm-6 st-service">
+					<h2><i class="fa fa-user-plus"></i><strong> Friendly Support </strong></h2>
+					<p>You can schedule an pick up appointment by which service would be available at your doorstep.</p>
+				</div>
+
+				<div class="col-md-4 col-sm-6 st-service">
+					<h2><i class="fa fa-headphones"></i><strong> Live Support</strong></h2>
+					<p>24/7 you can call to our Toll Free Number - 1800 00 11 22 for any support.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /SPECAILITY -->
+
+
+	<!-- FUN FACTS -->
+	<section id="fun-facts">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<div class="fun-fact text-center">
+					
+						<h3><i class="fa fa-thumbs-o-up"></i> <span class="st-counter">365</span></h3>
+						<p>Happy Clients</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="fun-fact text-center">
+						<h3><i class="fa fa-briefcase fa-6"></i> <span class="st-counter">73987</span></h3>
+						<p>Number of Mobile Repairs Done </p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="fun-fact text-center">
+						<h3><i class="fa fa-home"></i> <span class="st-counter">5</span></h3>
+						<p>Number of Branches in Chennai</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- /FUN FACTS -->
+
+
+		
+	<!-- PRICING -->
+	<section id="pricing">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title">
+						<h1><strong>Pricing</strong></h1>
+						<span class="st-border"></span>
+					</div>
+				</div>
+				</div>
+				<div id="pricing1" class="row">
+				<div class="col-md-4 col-sm-4">
+				<div class="st-pricing " style="background-image: url(images/bronzebg.png);background-color:white; text-align:center;">
+				<div class="row">
+				<div class="col-sm-12 col-md-8 col-md-offset-2">
+							<img class ="img-responsive "  src="images/bronze.jpg">
+							</div>
+				</div>
+				<div class="row">
+				<div class="col-sm-12 col-md-12">
+						<h5><strong>Basic</strong></h5>
+						<h3><strong>Rs 500</strong> </h3>
+						<div class="st-border"></div>
+						<ul>
+							<li>1 month Validity</li>
+							<li>5 Pick-Ups</li>
+							<li>5 In-Store appointments</li>
+							<li>5% discount on First Bill within 5 days</li>
+							<li>Live Support</li>
+						</ul>
+   						</div>
+				</div>
+				</div>
+				</div>
+				<div id="pricing2" class="col-md-4 col-sm-4">
+				<div class="st-pricing " style="background-image: url(images/silverbg.png);background-color:white; text-align:center;">
+				<div class="row">
+				<div class="col-sm-12 col-md-8 col-md-offset-2">
+							<img class ="img-responsive "  src="images/silver.jpg" >
+							</div>
+				</div>
+				<div class="row">
+				<div class="col-sm-12 col-md-12">
+					    <h5><strong>Silver</strong></h5>
+						<h3><strong>Rs 2000</strong></h3>
+						<div class="st-border"></div>
+						<ul>
+							<li>6 months Validity</li>
+							<li>10 Pick-Ups</li>
+							<li>10 In-Store appointments</li>
+							<li>10% discount on First Bill within 10 days</li>
+							<li>Live Support</li>
+						</ul>
+  						</div>
+				</div>
+				
+			</div>
+			</div>
+				
+				
+				<div id="pricing3" class="col-md-4 col-sm-4">
+				<div class="st-pricing text-center" style="background-image: url(images/goldbg.png);text-align:center;">
+				<div class="row">
+				<div class="col-sm-12 col-md-8 col-md-offset-2">
+							<img class ="img-responsive "  src="images/gold.jpg" >
+							</div>
+				</div>
+				<div class="row">
+				<div class="col-sm-12 col-md-12">
+								<h5><strong>Gold</strong></h5>
+								<h3><strong>Rs 3500</strong></h3>
+								<div class="st-border"></div>
+								<ul>
+									<li>12 months Validity</li>
+									<li>15 Pick-Ups</li>
+									<li>15 In-Store appointments</li>
+									<li>15% discount on First Bill within 10 days</li>
+									<li>Live Support</li>
+								</ul>
+         						</div>
+				</div>
+				</div>
+				</div>
+		</div>		
+			</div>
+			
+	</section>
+	<!-- /PRICING -->
+
+	<!-- ABOUT US -->
+	<section id="about-us">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 ">
+				<h1><strong>About Us</strong></h1>
+				<span class="st-border"></span>
+					<div class="about-us "><br>						
+						<p>MService has been launched in 2015. Company maintains valuable relationship with customers. Company has extended the services to Online mode also.
+                    Customers can use pick-up and drop facilities.</p>
+						<!-- <a href="" class="btn btn-send">View More</a>-->
+					</div>
+				</div>
+				<div class="col-sm-6 our-office" style="align:center;">
+					<div id="office-carousel" class="carousel slide" data-ride="carousel">			
+						<div class="carousel-inner">
+							<div class="item active ">
+								<img src="images/office/01.jpg" class="img-responsive" style="width:100%;" alt="">
+							</div>
+							<div class="item">
+								<img src="images/office/02.jpg" class="img-responsive"  style="width:100%;" alt="">			
+							</div>
+							<div class="item">
+								<img src="images/office/03.jpg" class="img-responsive" style="width:100%;" alt="">			
+							</div>
+							<div class="item">
+								<img src="images/office/04.jpg" class="img-responsive"  style="width:100%;" alt="">			
+							</div>
+							<!-- Indicators -->
+			    <ol class="carousel-indicators" style="left: 125%; top: 100px; width: 5%; height: 120px; bottom: 0px; background-color: gray;">
+			      <li data-target="#office-carousel" data-slide-to="0" class="active"></li>
+			      <li data-target="#office-carousel" data-slide-to="1"></li>
+			      <li data-target="#office-carousel" data-slide-to="2"></li>
+			      <li data-target="#office-carousel" data-slide-to="3"></li>      
+			    </ol>
+				</div>		
+					</div> <!--/#office-carousel--> 
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /ABOUT US -->
+
+	<!-- OUR TEAM -->
+<section id="our-team" style="top:100000px;">
+		<div class="container" id="t">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title">
+						<h1><strong>Our Team</strong></h1>
+						<span class="st-border"></span>
+					</div>
+				</div>
+                <div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div class="team-member">
+						<div class="member-image">
+							<img class="img-responsive" src="images/members/team1.jpg" alt="">
+							<div class="member-social">
+								<a href=""><i class="fa fa-facebook"></i></a>
+								<a href=""><i class="fa fa-twitter"></i></a>
+								<a href=""><i class="fa fa-google-plus"></i></a>
+								<a href=""><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+						<div class="member-info">
+							<h4>Sam</h4>
+							<span>Senior Executive</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6">
+					<div class="team-member">
+						<div class="member-image">
+							<img class="img-responsive" src="images/members/team2.jpg" alt="">
+							<div class="member-social">
+								<a href=""><i class="fa fa-facebook"></i></a>
+								<a href=""><i class="fa fa-twitter"></i></a>
+								<a href=""><i class="fa fa-google-plus"></i></a>
+								<a href=""><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+						<div class="member-info">
+							<h4>Marketing Team </h4>
+							<span> Tambaram Branch</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6">
+					<div class="team-member">
+						<div class="member-image">
+							<img class="img-responsive" src="images/members/team3.jpg" alt="">
+							<div class="member-social">
+								<a href=""><i class="fa fa-facebook"></i></a>
+								<a href=""><i class="fa fa-twitter"></i></a>
+								<a href=""><i class="fa fa-google-plus"></i></a>
+								<a href=""><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+						<div class="member-info">
+							<h4>Marketing Team</h4>
+							<span> Egmore Branch</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6">
+					<div class="team-member">
+						<div class="member-image">
+							<img class="img-responsive" src="images/members/team4.jpg" alt="">
+							<div class="member-social">
+								<a href=""><i class="fa fa-facebook"></i></a>
+								<a href=""><i class="fa fa-twitter"></i></a>
+								<a href=""><i class="fa fa-google-plus"></i></a>
+								<a href=""><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+						<div class="member-info">
+							<h4>Ankita</h4>
+							<span>Senior Executive</span>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- /OUR TEAM -->
+
+	<!-- CONTACT -->
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title">
+						<h1 ><strong>Contact us</strong></h1>
+						<span class="st-border"></span>
+					</div>
+				</div>
+				<div class="col-sm-4 contact-info">
+					<!-- <p class="contact-content">MService.</p>--><br>
+					<p class="st-address"><i class="fa fa-map-marker"></i>  Mahindra World City, Natham Post, Paranur Village, Chengalpet 603001</p>
+					<p class="st-phone"><i class="fa fa-mobile"></i> 09949596999</p>
+					<p class="st-email"><i class="fa fa-envelope-o"></i> MService@yahoo.com</p>
+					<p class="st-website"><i class="fa fa-globe"></i> www.MService.com</p>
+				
+				</div>
+				<div class="col-sm-7 col-sm-offset-1">
+					<form action="contact.html" class="contact-form" name="contact-form" method="post">
+						<div class="row">
+							<div class="col-sm-6">
+								<input type="text" name="name" required="required" placeholder="Name*">
+							</div>
+							<div class="col-sm-6">
+								<input type="email" name="email" required="required" placeholder="Email*">
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="subject" placeholder="Subject">
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="website" placeholder="Website">
+							</div>
+							<div class="col-sm-12">
+								<textarea name="message" required="required" cols="30" rows="7" placeholder="Message*"></textarea>
+							</div>
+							<div class="col-sm-12">
+								<input type="submit" name="submit" value="Send Message" class="btn btn-send">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /CONTACT -->
+
+	<!-- BLOG -->
+	<section id="blog">
+	<div class="container" >
+     <div class="blog-header" >
+        <h1 class="blog-title"><strong>Customer's Blog</strong></h1>
+        <p class="lead blog-description">This page has been designed for our company to have an active interaction with our valuable customers.</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h3 class="blog-post-title"><strong>Feedback</strong></h3>
+           <p class="blog-post-meta" style="color:blue;" > January 1, 2016 - <b style="color:black;">Ajay</b></p>
+
+            <p>Thanks to MService Store Customer care representative has helped me in servicing my mobile on time.</p>
+         </div><!-- /.blog-post -->
+          <div class="blog-post">
+            <h3 class="blog-post-title"><strong>Request</strong></h3>
+            <p class="blog-post-meta" style="color:blue;" >December 22, 2015 - <b style="color:black;">Suma</b></p>
+            <p> I would like you inform you to added alternate mobile number as i was unable to reach on the current existing contact number.</p>
+          </div><!-- /.blog-post -->
+
+          <div class="blog-post">
+            <h3 class="blog-post-title"><strong>New feature</strong></h3>
+            <p class="blog-post-meta " style="color:blue;">November 14, 2015 - <b style="color:black;">Raj</b></p>
+
+            <p>Dear Customers, I would like to mention some new facilities which has been launched by our organization.</p>
+            <ul>
+              <li>Online web-site. </li>
+              <li>Pick-up and Drop options.</li>
+            </ul>
+            <p>Thanks for maintaining a valuable relationship with our organization.</p>
+            </div><!-- /.blog-post -->
+
+
+        
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module">
+            <h4><strong>Archives</strong></h4>
+            <ol class="list-unstyled">
+              <li><a href="#" style="color:blue;">January 2016</a></li>
+              <li><a href="#" style="color:blue;">December 2015</a></li>
+              <li><a href="#" style="color:blue;">November 2015</a></li>
+              </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4><strong>Elsewhere</strong></h4>
+            <ol class="list-unstyled">
+              <li><a href="#" style="color:blue;">Twitter</a></li>
+              <li><a href="#" style="color:blue;">Facebook</a></li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+      </div>
+
+      </section>
+	
+    <!-- /BLOG -->
+
+	<!-- FOOTER -->
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<!-- SOCIAL ICONS -->
+				<div class="col-sm-3 footer-social-icons">
+				<a href="#our-team"> <i class="fa fa-users">Team</i></a>
+				</div>
+			    <div class="col-sm-3 footer-social-icons">
+			    <a href="#about-us"><i class="fa fa-sitemap">About Us</i></a>
+				</div>
+				<div class="col-sm-3 footer-social-icons">
+				 <a href="#contact"><i class="fa fa-comments ">Contact</i></a>
+				</div>
+				<div class="col-sm-3 footer-social-icons">
+				<a href="#blog"><i class="fa fa-rss ">Blog</i></a>
+			    </div>
+			    </div>
+			    <br>
+			    <div class="row">
+				<div class="col-sm-6 col-sm-push-6 footer-social-icons">
+					<span>Follow us:</span>
+					<a href=""><img src="images/fb.png"></img></a>
+					<a href=""><img src="images/gp.png"></img></a>
+					<a href=""><img src="images/yt.png"></img></a>
+					<a href=""><img src="images/t.png"></img></a>
+				</div>
+				<!-- /SOCIAL ICONS -->
+				<div class="col-sm-6 col-sm-pull-6 ">
+					<p>&copy; 2017 <a href="">MService</a>. All Rights Reserved.</p>
+				</div>
+				</div>
+			
+		</div>
+	</footer>
+	<!-- /FOOTER -->
+
+
+	<!-- Scroll-up -->
+	<div class="scroll-up">
+		<ul><li><a href="#header"><i class="fa fa-angle-up"></i></a></li></ul>
+	</div>
+
+	<!-- JS -->
+	<script type="text/javascript" src="js/jquery.min.js"></script><!-- jQuery -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script><!-- Bootstrap -->
+	<script type="text/javascript" src="js/jquery.parallax.js"></script><!-- Parallax -->
+	<script type="text/javascript" src="js/smoothscroll.js"></script><!-- Smooth Scroll -->
+	<script type="text/javascript" src="js/masonry.pkgd.min.js"></script><!-- masonry -->
+	<script type="text/javascript" src="js/jquery.fitvids.js"></script><!-- fitvids -->
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script><!-- Owl-Carousel -->
+	<script type="text/javascript" src="js/jquery.counterup.min.js"></script><!-- CounterUp -->
+	<script type="text/javascript" src="js/waypoints.min.js"></script><!-- CounterUp -->
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script><!-- isotope -->
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script><!-- magnific-popup -->
+	<script type="text/javascript" src="js/scripts.js"></script><!-- Scripts -->
+
+
+</body>
+</html>

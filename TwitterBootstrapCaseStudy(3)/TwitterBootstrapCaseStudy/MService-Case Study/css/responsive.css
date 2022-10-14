@@ -1,0 +1,331 @@
+/* lg */ 
+@media (min-width: 1200px) {
+.head	{
+		font-size: 6rem;
+	}
+	h1{
+	font-size: 3rem;
+	}
+}
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+h1{
+	font-size: 3rem;
+	}
+	#home-carousel  .item {
+		height: 500px;
+	}
+	.head	{
+			font-size: 6rem;
+		}
+	.carousel-caption h1 {
+		font-size:26px;
+		margin-bottom:0;
+		line-height:27px;
+		letter-spacing:2px;
+		font-weight:100;
+	}
+
+	.carousel-caption h2 {
+		font-size:51px;
+		font-weight:600;
+		margin-top:0px;
+	
+		letter-spacing:2px;
+		margin-bottom:20px;
+	}
+	
+	#our-team, #pricing, #our-works, #services, #contact{
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+
+
+
+}
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+h1{
+	font-size: 2.5rem;
+	}
+	.head	{
+		font-size: 4rem;
+	}
+	.st-navbar ul li a{
+	
+		margin-left: 13px;
+		margin-right: 13px;
+	}
+	
+	.team-member{
+	padding-left:0px;
+	padding-right:40px;
+	align:center;
+	}
+.member-info{
+	padding-right:35px;
+	}
+    #pricing
+    {
+    display:none;
+    }
+    #slidebarmenu > li:last-child(2)
+    {display:none;}
+    
+	#home-carousel  .item {
+		height: 400px;
+	}
+
+	.carousel-caption h1 {
+		font-size:26px;
+		margin-bottom:0;
+		line-height:27px;
+		letter-spacing:2px;
+		font-weight:100;
+	}
+
+	.carousel-caption h2 {
+		font-size:51px;
+		font-weight:600;
+		margin-top:0px;
+		
+		letter-spacing:2px;
+		margin-bottom:20px;
+	}
+
+	#about-us .about-us {
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 9%;
+	}
+
+	.scroll-up{
+		display: none !important;
+	}
+
+	#our-team, #pricing, #our-works, #services, #contact{
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+
+	#fun-facts .col-md-3:nth-child(2) .fun-fact{
+		border-right: 0px;
+	}
+
+	#testimonial{
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	#about-us .about-us .btn-send {
+		margin-top: 12px;
+	}
+
+
+}
+
+/* xs */
+@media (max-width: 767px) and (min-width:478px){
+
+	h1{
+	font-size: 2.5rem;
+	}
+.head	{
+		font-size: 3rem;
+	}
+	
+  #about-us #ol
+  {top:120px;
+  height:60px;
+  }
+ 	#header .logo1 {
+		height:auto;
+		width:auto;
+		
+		margin: 0 auto;	
+	}
+	.navbar-form{
+	/*margin-top:15px;
+	    border-top: 1px solid #62b0ff;
+    border-bottom: 1px solid #62b0ff;
+        padding: 10px 15px;*/
+        display:none;
+	}
+	
+	#st-navbar-collapse .navbar-collapse .collapse-in
+	{
+	border-top-width:0px;
+	}
+
+   
+	.team-member{
+	padding-left:220px;
+	padding-right:210px;
+	
+	}
+	#pricing
+    {
+    display:none;
+    }
+	.member-info{
+	padding-right:35px;
+	}
+	
+	
+#office-carousel .item{
+		align:center;
+	} 
+	.navbar-nav{
+		background-color: #62b0ff;
+	}
+
+	.st-navbar .navbar-collapse ul{
+		margin-top: 18px;
+	}
+
+	#home-carousel  .item {
+		height: 300px;
+	}
+
+	.carousel-caption h1 {
+		font-size:16px;
+		margin-bottom:0;
+		line-height:27px;
+		letter-spacing:2px;
+		font-weight:100;
+	}
+
+	.carousel-caption h2 {
+		font-size:31px;
+		font-weight:600;
+		margin-top:0px;
+	
+		letter-spacing:2px;
+		margin-bottom:20px;
+	}
+	.carousel-caption > .head {
+		font-size:12px;
+		font-weight:600;
+		margin-top:0px;
+		color:orange;
+		letter-spacing:2px;
+		margin-bottom:20px;
+	}
+
+/*	.scroll-up{
+		display: none !important;
+	}*/
+
+	.footer-social-icons {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	.copyright{
+		text-align: center;
+	}
+
+	#contact{
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	.contact-info{
+		margin-bottom: 50px;
+	}
+
+	#fun-facts .fun-fact{
+		border-right: 0px;
+		margin-bottom: 30px;
+	}
+
+	#about-us .our-office{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	#testimonial{
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	#about-us .about-us {
+		padding-left: 5%;
+		padding-right: 5%;
+		
+		
+	}
+	#about-us .carousel-indicators
+  {
+  left: 125%; top: 40px; width: 5%; height: 50px; bottom: 0px; background-color: gray;
+  }
+	
+
+	#our-team, #pricing, #our-works, #services{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.st-service {
+		margin-top: 30px;
+		padding-top:0px;
+	}
+	
+
+}
+
+/* XS Portrait */
+@media (max-width: 479px) {
+	#home-carousel  .item {
+		height: 300px;
+	}
+.head	{
+		font-size: 3rem;
+	}
+	h1{
+	font-size: 2.5rem;
+	}
+	#our-team{
+	display:none;
+	}
+.team-member{
+	padding-left:220px;
+	padding-right:210px;
+	align:center;
+	}
+#pricing
+    {
+    display:none;
+    }
+    
+    #contact{
+	    background-color:#ECE8E3 ;
+    }
+    
+    #blog{
+	 background-color: #F1F0EE;}
+    #header .logo1 {
+		height:auto;
+		width:auto;
+		padding-left:20px;
+		margin: 0 auto;	
+	}
+	.navbar-form{
+	
+        display:none;
+	}
+	
+	#st-navbar-collapse .navbar-collapse .collapse-in
+	{
+	border-top-width:0px;
+	}
+    
+.navbar-nav{
+		background-color: #62b0ff;
+	}
+	
+
+}
+

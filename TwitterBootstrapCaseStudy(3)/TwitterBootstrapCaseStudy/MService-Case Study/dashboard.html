@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Users dashboard</title>
+    
+      <script src="js/storage.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script><!-- jQuery -->
+     <script type="text/javascript" src="js/bootstrap.min.js"></script><!-- Bootstrap -->
+
+   
+   
+ 
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="css/mydashboard.css" rel="stylesheet">
+    
+     <link rel="stylesheet" href="css/font-awesome.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body onload="retriveData()">
+  
+	
+	<!-- HEADER -->
+	<header id="header">
+
+    
+  
+     <nav class="navbar navbar-inverse navbar-fixed-top " >
+      <div class="container-fluid">
+		
+			<div class="row" style="background-color:#62b0ff;">
+			<div class="col-sm-12 col-md-12">
+			       
+			
+	 
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" >
+          <div class="visible-lg visible-md">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+            <a href="#" style="color:white;right:20px;" onclick="logOut()"><i class="fa fa-sign-out"></i> Logout</a>
+            </li>
+           </ul>
+      </div>
+        <div class="  hidden-lg hidden-md" >
+          <ul class="nav navbar-nav navbar-right">
+             <li ><a href="#d" style="color:white;right:20px;"><i class="fa fa-tachometer"></i>  My Dashboard <span class="sr-only">(current)</span></a></li>
+            <li><a href="#b" style="color:white;right:20px;" > <i class="fa fa-money"></i> My Billing Details</a></li>
+            <li>            
+            <a href="#" onclick="logOut()" style="color:white;right:20px;"><i class="fa fa-sign-out"></i> Logout</a>
+            </li>          
+          </ul>
+      </div>
+       </div>
+       </div>
+       </div>
+	 
+       <div class="row" style="background-color:white;" >
+       <div class="col-sm-2 col-md-2" >
+      	<a class="logo1" style="background-color: white" href="Index.html"><img src="images/logo.png" style="padding-top:15px;" alt=""></a>
+      
+      	</div>
+      <div class="b hidden-xs" >	
+      	  <h3  class="name" id="Username" >Hi </h3>
+      	</div>
+       </div>
+      </div>
+      
+    </nav>
+</header>
+
+<section id="d" >
+    <div class="container-fluid">
+    <div class="visible-lg visible-md">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar" style="color:62b0ff;">
+            <li ><a href="#"><i class="fa fa-tachometer"></i> My Dashboard <span class="sr-only">(current)</span></a></li>
+            <li><a href="#b" ><i class="fa fa-money"></i> My Billing Details</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-2 col-md-10  main" >
+        
+          <div class="row">
+			<div class="col-md-12" >
+				<img src="images/r.png" class="img img-responsive" alt="Generic placeholder thumbnail" >
+			</div>
+		   </div>
+           <div class="row ">
+			
+            <div class="col-md-3 placeholder text-center" >              
+              <h4 >Mobiles</h4>
+              <span class="text-muted ">2</span>
+            </div>
+            <div class="col-md-2 placeholder text-center" >
+              <h4>Tablets</h4>
+              <span class="text-muted">2</span>
+            </div>
+            <div class="col-md-3 col-md-offset-1 placeholder text-center" >
+             <h4>Laptops</h4>
+              <span class="text-muted">3</span>
+            </div>
+            <div class="col-md-3 placeholder text-center" >
+             <h4>Desktops</h4>
+              <span class="text-muted">0</span>
+            </div>
+          </div>
+          </div>
+	  </div>
+  </div>
+    <!-- new-->
+    <div class="hidden-lg hidden-md visible-sm visible-xs">
+      <div class="row">
+         <div class="col-sm-12 col-md-12 main">
+             <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="images/1.JPG" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Mobiles</h4>
+              <span class="text-muted">2</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="images/2.JPG" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Tablets</h4>
+              <span class="text-muted">2</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="images/3.JPG" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Laptops</h4>
+              <span class="text-muted">3</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="images/4.JPG" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Desktops</h4>
+              <span class="text-muted">0</span>
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
+    
+          </div>
+</section>
+<section class="b" id="b">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12" >	
+			  <h3  class="name" id="Username" >Your Billing Details </h3>
+			</div>
+	</div>
+    <div class="row">
+		<div class="col-sm-12">
+          <div class="table-responsive">
+				<div class="hidden-sm hidden-xs">
+					<table class="table table-hover" style="border:#62b0ff;">
+					  <thead>
+						<tr>
+						  <th>#</th>
+						  <th>S.No</th>
+						  <th>Service No</th>
+						  <th>Date</th>
+						  <th>Service</th>
+						  <th>Product</th>
+						  <th>Brand</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <td>1</td>
+						  <td>2004200500</td>
+						  <td>AX20789012</td>
+						  <td>24-8-2016</td>
+						  <td>New Laptop Purchase</td>
+						  <td>Laptop</td>
+						  <td>HP Pavilion </td>
+						</tr>
+					   <tr>
+						  <td>2</td>
+						  <td>2005200345</td>
+						  <td>BZ10567893</td>
+						  <td>26-8-2016</td>
+						  <td>Laptop Service</td>
+						  <td>Laptop</td>
+						  <td>HP Pavilion </td>
+						</tr>
+					   <tr>
+						  <td>3</td>
+						  <td>3000000345</td>
+						  <td>BZ20567890</td>
+						  <td>15-1-2017</td>
+						  <td>Operating System Issue</td>
+						  <td>Laptop</td>
+						  <td>HP Pavilion </td>
+						</tr>
+					   <tr>
+						  <td>4</td>
+						  <td>3000200370</td>
+						  <td>BZ20567900</td>
+						  <td>16-1-2017</td>
+						  <td>Service</td>
+						  <td>Mobile</td>
+						  <td>Microsoft Lumia </td>
+						</tr>
+					   <tr>
+						  <td>5</td>
+						  <td>3000300100</td>
+						  <td>BZ20568100</td>
+						  <td>17-2-2017</td>
+						  <td>Resale</td>
+						  <td>Mobile</td>
+						  <td>Microsoft Lumia </td>
+						</tr>
+						 <tr>
+						  <td>6</td>
+						  <td>4000000100</td>
+						  <td>BZ50568100</td>
+						  <td>21-4-2017</td>
+						  <td>Service</td>
+						  <td>Tablet</td>
+						  <td>Dell Tab</td>
+						</tr>
+						 <tr>
+						  <td>7</td>
+						  <td>4000300100</td>
+						  <td>C120568100</td>
+						  <td>17-6-2017</td>
+						  <td>Service</td>
+						  <td>Tablet</td>
+						  <td>Micromax Tab </td>
+						</tr>
+					   </tbody>
+					</table>
+				</div>
+          
+          	<div class="visible-sm visible-xs col-xs-12">
+						<table class="table table-hover" style="border:#62b0ff;">
+						  <thead>
+							<tr>
+							  <th>#</th>
+							  <th>S.No</th>
+							  <th>Service No</th>
+							  <th>Date</th>
+							  <th>Service</th>
+							  
+						   </tr>
+						  </thead>
+						  <tbody>
+							<tr>
+							  <td>1</td>
+							  <td>2004200500</td>
+							  <td>AX20789012</td>
+							  <td>24-8-2016</td>
+							  <td>New Laptop Purchase</td>
+							  
+							</tr>
+						   <tr>
+							  <td>2</td>
+							  <td>2005200345</td>
+							  <td>BZ10567893</td>
+							  <td>26-8-2016</td>
+							  <td>Laptop Service</td>
+							  
+							</tr>
+						   <tr>
+							  <td>3</td>
+							  <td>3000000345</td>
+							  <td>BZ20567890</td>
+							  <td>15-1-2017</td>
+							  <td>Operating System Issue</td>
+							  
+							</tr>
+						   <tr>
+							  <td>4</td>
+							  <td>3000200370</td>
+							  <td>BZ20567900</td>
+							  <td>16-1-2017</td>
+							  <td>Service</td>
+							  
+							</tr>
+						   <tr>
+							  <td>5</td>
+							  <td>3000300100</td>
+							  <td>BZ20568100</td>
+							  <td>17-2-2017</td>
+							  <td>Resale</td>
+							  
+							</tr>
+							 <tr>
+							  <td>6</td>
+							  <td>4000000100</td>
+							  <td>BZ50568100</td>
+							  <td>21-4-2017</td>
+							  <td>Service</td>
+							  </tr>
+							 <tr>
+							  <td>7</td>
+							  <td>4000300100</td>
+							  <td>C120568100</td>
+							  <td>17-6-2017</td>
+							  <td>Service</td>
+							  
+							</tr>
+						   </tbody>
+						</table>
+				</div>
+          
+       </div>
+	   </div></div>
+       </div>
+	
+    </section>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	
+  
+  </body>
+</html>
