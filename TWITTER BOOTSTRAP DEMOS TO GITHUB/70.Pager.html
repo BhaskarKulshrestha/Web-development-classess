@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+	<div class="fullwidth" id="header">
+		<header>	
+			<h3>Phenomenal India</h3>
+		</header>
+	</div>
+
+<div  class="page">   
+		<div>
+			<p class="text-center faq">
+			<strong>Tourists Statistics</strong>			
+			</p>	  
+		</div>
+<div id="pagecontent">
+	
+</div>
+<div class="text-center">
+<ul class="pager">
+  <li class="previous"><a href="#">Previous</a></li>
+  <li class="next"><a href="#">Next</a></li>
+</ul>
+</div>
+<script>
+	$(document).ready(function(){
+		var p1="<table class='table table-responsive'>"+
+				"<tr>"+
+					"<th>Year</th>"+
+					"<th>Kerala</th>"+
+					"<th>Tamil Nadu</th>"+
+				"</tr>"+
+				"<tr>"+
+					"<td>2015</td>"+
+					"<td>130463</td>"+
+					"<td>150463</td>"+
+				"</tr>"+
+				"<tr>"+
+					"<td>2014</td>"+
+					"<td>923366</td>"+
+					"<td>130463</td>"+
+			"	</tr>"+
+			"</table>";
+		var p2="<table class='table table-responsive'>"+
+			"<tr>"+
+								"<th>Year</th>"+
+								"<th>Kerala</th>"+
+								"<th>Tamil Nadu</th>"+
+							"</tr>"+				
+				"<tr>"+
+					"<td>2013</td>"+
+					"<td>858143</td>"+
+					"<td>923366</td>"+
+				"</tr>"+
+				"<tr>"+
+					"<td>2012</td>"+
+					"<td>831477</td>"+
+					"<td>923366</td>"+
+				"</tr>"+
+			"</table>";
+			
+			$("#pagecontent").html(p1);
+			
+			$(".next").on('click', function(){
+				$("#pagecontent").html(p2);
+			});			
+			$(".previous").on('click', function(){
+				$("#pagecontent").html(p1);
+			});
+			
+	});
+</script>
+
+</body>
+
+</html>	

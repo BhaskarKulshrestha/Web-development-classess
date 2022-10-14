@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+	<div class="fullwidth" id="header">
+		<header>	
+			<h3>Phenomenal India</h3>
+		</header>
+	</div>
+<div  class="page">   
+	<div>
+		<p class="text-center faq">
+		<strong>Booking Report</strong>			
+		</p>	  
+	</div>
+<div id="pagecontent">
+
+</div>
+<div class="text-center">
+<nav aria-label="Page navigation">
+<ul class="pagination">   
+<li ><a  href="#" class="page-link0">1</a></li>
+<li><a  href="#" class="page-link1">2</a></li>   
+<li><a  href="#" class="page-link2">3</a></li>  
+<li><a  href="#" class="page-link3">4</a></li>  
+</ul>
+
+</nav>
+</div>
+<script>
+$(document).ready(function(){
+	var p1="<table class='table table-responsive'>"+
+			"<tr>"+
+				"<th>Booking No.</th>"+
+				"<th>Name</th>"+
+				"<th>Contact Number</th>"+
+				"<th>Package details</th>"+
+			"</tr>"+
+			"<tr>"+
+				"<td>101</td>"+
+				"<td>John</td>"+
+				"<td>1111111111</td>"+
+				"<td>Uttarakhand package</td>"+
+			"</tr>"+
+			"<tr>"+
+				"<td>102</td>"+
+				"<td>Swathy</td>"+
+				"<td>2222222222</td>"+
+				"<td>Manali package</td>"+
+			"</tr>"+
+			"<tr>"+
+				"<td>103</td>"+
+				"<td>Parimala</td>"+
+				"<td>3333333333</td>"+
+				"<td>Chandigarh  package</td>"+
+			"</tr>"+
+		"</table>";
+	var p2="<table class='table table-responsive'>"+
+			"<tr>"+
+				"<th>Booking No.</th>"+
+				"<th>Name</th>"+
+				"<th>Contact Number</th>"+
+				"<th>Package details</th>"+
+			"</tr>"+
+			"<tr>"+
+				"<td>104</td>"+
+				"<td>Priya</td>"+
+				"<td>4444444444</td>"+
+				"<td>Jammu package</td>"+
+			"</tr>"+
+			"<tr>"+
+				"<td>105</td>"+
+				"<td>Priom</td>"+
+				"<td>5555555555</td>"+
+				"<td>Jammu package</td>"+
+			"</tr>"+
+			"<tr>"+
+				"<td>106</td>"+
+				"<td>Daniel</td>"+
+				"<td>6666666666</td>"+
+				"<td>Chandigarh  package</td>"+
+			"</tr>"+
+		"</table>";
+		
+		var p3="<table class='table table-responsive'>"+
+		"<tr>"+
+				"<th>Booking No.</th>"+
+				"<th>Name</th>"+
+				"<th>Contact Number</th>"+
+				"<th>Package details</th>"+
+			"</tr>"+
+			"<tr>"+
+				"<td>107</td>"+
+				"<td>Kavya</td>"+
+				"<td>4444224444</td>"+
+				"<td>Jammu package</td>"+
+			"</tr>"+
+			"<tr>"+
+				"<td>108</td>"+
+				"<td>Suni</td>"+
+				"<td>5511555555</td>"+
+				"<td>Jammu package</td>"+
+			"</tr>"+
+			"<tr>"+
+				"<td>109</td>"+
+				"<td>Prakash</td>"+
+				"<td>6666666689</td>"+
+				"<td>Chandigarh  package</td>"+
+			"</tr>"+
+		"</table>";
+		
+		var p4="<table class='table table-responsive'>"+
+		"<tr>"+
+				"<th>Booking No.</th>"+
+				"<th>Name</th>"+
+				"<th>Contact Number</th>"+
+				"<th>Package details</th>"+
+			"</tr>"+
+			"<tr>"+
+				"<td>110</td>"+
+				"<td>Neha</td>"+
+				"<td>1144444444</td>"+
+				"<td>Jammu package</td>"+
+			"</tr>"+
+			"<tr>"+
+				"<td>111</td>"+
+				"<td>Tom</td>"+
+				"<td>5557755555</td>"+
+				"<td>Jammu package</td>"+
+			"</tr>"+
+			"<tr>"+
+				"<td>112</td>"+
+				"<td>Mani</td>"+
+				"<td>6623666666</td>"+
+				"<td>Chandigarh  package</td>"+
+			"</tr>"+
+		"</table>";
+		
+		$("#pagecontent").html(p1);
+		
+		$(".page-link0").on('click', function(){
+			$("#pagecontent").html(p1);
+		});			
+		$(".page-link1").on('click', function(){
+			$("#pagecontent").html(p2);
+		});
+		$(".page-link2").on('click', function(){
+			$("#pagecontent").html(p3);
+		});
+		$(".page-link3").on('click', function(){
+			$("#pagecontent").html(p4);
+		});
+});
+</script>
+
+</body>
+
+</html>	

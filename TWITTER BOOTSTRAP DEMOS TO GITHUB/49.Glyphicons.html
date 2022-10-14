@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+	<div class="fullwidth" id="header">
+		<header>	
+			<h3>Phenomenal India</h3>
+		</header>
+	</div>
+	
+<br>
+<div class="container whitebackground gridbordergrey">
+	<div class="row" style="padding:5px">
+		<div class="col-sm-6 ">
+			<h3 class="text-left ">
+				<strong>Phenomenal India Membership	Offers	</strong>
+			</h3>
+		</div>
+		<div class="col-sm-2 text-right" ><br>
+			<span class="glyphicon glyphicon-phone-alt " title="Click to print" >
+			<span style="margin:1px">9999999999</span></span>
+		</div>
+		<div class=" col-sm-2">    <br>
+			<div class="input-group">
+			 <input class="input"  type="search" class="form-control">  
+			 <span class="input-group-addon s1" title="Enter to search" >
+				<i class="glyphicon glyphicon-search"></i></span>
+			</div>
+        </div>
+		<div class=" col-sm-2 text-right s1">    <br>
+			
+			 <span class="glyphicon glyphicon-home" title="Click to go to home page" >
+				</span>
+			
+        </div>
+	</div>
+
+	<div class="row whiteborder greybg" >
+		<div class="col-sm-4 whiteborder" style="padding:15px">
+			
+			<strong>Kerala Tour</strong>
+			<img src="shutterstockimages/Kerala.PNG" class="img-responsive"/>
+			<span title="Click to share" class="s1" onclick="$('#s1').show()">
+							<span class="glyphicon glyphicon-share"></span>
+			</span>	
+			<span style="float:right; display:none" id="s1">
+				<span class="glyphicon glyphicon-print" title="Click to print"></span>
+				<span class="glyphicon glyphicon-envelope" title="Click to mail"></span>
+				<span class="glyphicon glyphicon-download-alt" title="Click to download details"></span>
+			</span>
+		</div>
+		<div class="col-sm-4 whiteborder" style="padding:15px">
+			
+			<strong>TamilNadu Tour</strong>
+			<img src="shutterstockimages/TNn.PNG" class="img-responsive"/>
+			<span title="Click to share" class="s1" onclick="$('#s2').show()">
+							<span class="glyphicon glyphicon-share"></span>
+			</span>	
+			<span style="float:right; display:none" id="s2">
+				<span class="glyphicon glyphicon-print" title="Click to print"></span>
+				<span class="glyphicon glyphicon-envelope" title="Click to mail"></span>
+				<span class="glyphicon glyphicon-download-alt" title="Click to download details"></span>
+			</span>
+		</div>
+		<div class="col-sm-4 whiteborder" style="padding:15px">
+			
+			<strong>Sikkim Tour</strong>
+			<img src="shutterstockimages/Sikkim.PNG" class="img-responsive"/>
+			<span title="Click to share" class="s1" onclick="$('#s3').show()">
+							<span class="glyphicon glyphicon-share"></span>
+			</span>	
+			<span style="float:right; display:none" id="s3">
+				<span class="glyphicon glyphicon-print" title="Click to print"></span>
+				<span class="glyphicon glyphicon-envelope" title="Click to mail"></span>
+				<span class="glyphicon glyphicon-download-alt" title="Click to download details"></span>
+			</span>
+		</div>
+		
+	</div>	
+	<div class="row whitebackground " style="padding:5px">		
+				<h3 style="padding:5px">
+					<strong>Renew Membership</strong>
+				</h3>	
+			<div class="col-sm-offset-1 col-sm-3 whiteborder greybg" style="padding:15px">	<br>
+				<table>
+				<tr class="text-center">
+					<td>
+						<img src="shutterstockimages/user.PNG" class="img-responsive img-thumbnail"/><br>
+						<span title="Click to modify the profile pic" class="s1">
+							<span class="glyphicon glyphicon-camera"></span>
+						</span>								  
+						 <div class="input-group">                                        
+                                         <input class="input"  type="text" value="Tom" disabled class="form-control">  
+										 <span class="input-group-addon s1" title="Click to modify" ><i class="glyphicon glyphicon-pencil"></i></span>
+                                    </div> <br><br>
+					</td>				
+				</tr>
+				</table>
+			</div>
+			<div class="col-sm-7 whiteborder greybg " style="padding:15px">	
+				 <form class="form-horizontal css-form">
+					<div class="input-group">
+							<span class="input-group-addon">
+							<i class="glyphicon glyphicon-envelope"></i></span>
+							 <input  class="form-control" type="text" class="form-control" 
+							 placeholder="Please update your email id.">  
+					</div><br>
+					 <div class="input-group">
+							<span class="input-group-addon">
+							<i class="glyphicon glyphicon-map-marker"></i></span>
+							 <input  class="form-control" type="text" class="form-control" 
+							 placeholder="Please update your location.">  
+					</div><br>
+					<div class="input-group">
+							<span class="input-group-addon">
+							<i class="glyphicon glyphicon-phone"></i></span>
+							 <input  class="form-control" type="tel" class="form-control" 
+							 placeholder="Please update your phone number.">  
+					</div><br>
+					<div class="input-group">
+							<span class="input-group-addon">
+							<i class="glyphicon glyphicon-calendar"></i></span>
+							 <input  class="form-control" type="date" class="form-control" 
+							 placeholder="Please update your date of birth.">  
+					</div><br>
+					<div class="text-left">
+						<button class="btn btn-primary">Renew Membership</button>
+					</div>
+				 </form>
+			</div>
+		</div>
+			
+	</div>
+</div>	
+</body>
+
+
+
+
+</html>	

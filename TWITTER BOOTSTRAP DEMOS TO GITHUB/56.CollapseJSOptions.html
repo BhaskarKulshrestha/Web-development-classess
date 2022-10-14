@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css"/>
+  </head>
+<body>
+
+<div class="fullwidth" id="header">
+	<header>	
+		<h3>Phenomenal India</h3>
+	</header>
+</div>
+
+<div  style="position: relative;
+	margin-top: 15px;
+	background-color:#F6F3F2; z-index:1000;">   
+		<div  class="container">
+			  
+		</div>
+	
+	
+	<div class="container"  style="border: 5px solid #FCFAFA; border-radius: 5px">
+		<p style=" background-color: rgb(248, 153, 45);z-index:1000;
+				margin: 10px ; padding:5px " 
+				class="text-center">
+			<strong>FAQs</strong>
+			
+			</p>
+   <div class="panel-group" id="accordion" style="margin: 10px ; padding:5px ">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+		   When can I avail my first Remarkable India Holiday?</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">
+		Once your reservation is confirmed, you will get a confirmation voucher.
+		You can avail this voucher when you check-in.
+		</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+		   How do I book my Holidays?</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+		Log in on the Home page of the website www.remarkableindia.com
+		</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+		How do I pay the subsription fee?</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+		You can pay online (website/IVRS).
+		</div>
+      </div>
+    </div>
+	 <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+		  What is the Cancellation Policy?</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">
+		A cancellation fee of   Rs. 1,000 will be charged if a Member cancels a confirmed holiday.
+		</div>
+      </div>
+    </div>
+	
+	 <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+		  What documents should I carry with me when checking in?</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">
+		Furnishing the confirmation voucher, your membership card and photo identity card is a must at the time of check in.
+		</div>
+      </div>
+    </div>
+  </div> 
+</div>
+</div>			
+<script>
+$(document).ready(function(){
+
+$('.collapse').collapse({
+                    toggle: false
+            });
+
+
+});
+</script>
+</body>
+
+
+
+
+</html>	

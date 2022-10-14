@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css"/> 
+  <style>
+  #section1 {padding-top:50px; border-bottom: 1px solid black;}
+  #section2 {padding-top:50px; border-bottom: 1px solid black;}
+  #section3 {padding-top:50px; border-bottom: 1px solid black;}
+  </style>
+ 
+  </head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50" class="text-center">
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+	 <!-- <nav class="navbar navbar-fixed-top" style="background: linear-gradient(to right,  orange, white , green); ">-->
+	  <div class="container-fluid ">
+		<div class="navbar-header">
+		  <a class="navbar-brand" href="#">
+		  <strong >Phenomenal India</strong></a>
+		</div>
+		<ul class="nav navbar-nav ">
+		  <li><a href="#section1">Home</a></li>
+		  <li><a href="#section2">Destinations</a></li>
+		  <li><a href="#section3">Packages</a></li> 
+		  
+		</ul>
+	  </div>
+	</nav>
+ 
+
+
+<div id="section1" class="container">
+<h1 style=" padding:7px">Home</h1>
+  <img src="shutterstockimages/india.PNG"  />
+ <p id="aboutIndia">
+			India ia a very vast country, rich in cultural heritage and breathtaking natural beauty and resources.
+			India is popular for its integrity amongst the rich diversity of people speaking multiple different languages.
+			One can travel within India with any travel segments like luxury stays like palace hotels, or even moderate options 
+			like guesthouses or homestays. This naturally adds to the appeal as one of the possible travel destinations.
+	
+		</p>
+	
+</div>
+<div id="section2" class="container">
+  <h1 class="text-center"  style="padding:7px">Destinations in India</h1>
+		<div class="row">
+			<div class="col-xs-6 text-center whiteborder " style="background-color:#F6F3F2; padding:15px">
+				<div class="row">
+					<div class="col-sm-12">
+						<img src="shutterstockimages/Kerala.PNG" class="img-responsive img-thumbnail"/>
+					</div>
+					<div class="col-sm-12">
+						<h4 class="text-center"><strong>Kerala</strong> Gods own country!</h4>				
+						
+						<p class="text-center">
+							<button class="btn btn-warning btn-xs ">Read more..</button>
+						</p>
+					</div>
+				</div>				
+			</div>
+			<div class="col-xs-6 text-center whiteborder " style="background-color:#F6F3F2;padding:15px">
+				<div class="row">
+					<div class="col-sm-12">
+						<img src="shutterstockimages/TNn.PNG"  class="img-responsive img-thumbnail"/>				
+					</div>
+					<div class="col-sm-12">
+						<h4 class="text-center"><strong>Tamil Nadu</strong> Land of Vedas!	</h4>				
+						<p class="text-center">
+							<button class="btn btn-success btn-xs ">Read more..</button>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6 text-center whiteborder " style="background-color:#F6F3F2;padding:15px">
+				<div class="row">
+					<div class="col-sm-12">
+						<img src="shutterstockimages/Sikkim.PNG" class="img-responsive img-thumbnail"/>
+					</div>
+					<div class="col-sm-12">
+						<h4 class="text-center"><strong>Sikkim</strong> Land of Love!</h4>			
+						
+						<p class="text-center">
+							<button class="btn btn-warning btn-xs ">Read more..</button>
+						</p>
+					</div>
+				</div>				
+			</div>
+			<div class="col-xs-6 text-center whiteborder " style="background-color:#F6F3F2;padding:15px">
+				<div class="row">
+					<div class="col-sm-12">
+						<img src="shutterstockimages/Karnataka.PNG"  class="img-responsive img-thumbnail"/>				
+					</div>
+					<div class="col-sm-12">
+						<h4 class="text-center"><strong>Karnataka</strong> Land of Sandal!</h4>
+				
+						<p class="text-center">
+							<button class="btn btn-success btn-xs ">Read more..</button>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+</div>
+</div>
+<div id="section3" class="container">
+  <h1 style="padding:7px">Packages</h1>
+  <div class="row">
+	<div class="col-sm-6  gridbordergrey whitebackground" style="padding:15px">
+	<h3 class="text-center">Luxury Packages</h3>
+		<img src="shutterstockimages/36723919.jpg" class="img-responsive img-thumbnail" style="padding:15px"/>
+		<br><br>
+		 <button type="button" class="btn btn-info" data-toggle="collapse" 
+		 data-target="#pack1">Package Snapshot</button>
+		<div id="pack1" class="collapse" style="padding:15px">
+			<strong> No. of packages: </strong> 2 <br>
+			<strong> Average cost: </strong> Rs. 1,00,000.00 <br>
+		</div>
+	</div>
+	<div class="col-sm-6  gridbordergrey whitebackground" style="padding:15px">
+	<h3 class="text-center ">Family Packages</h3>
+		<img src="shutterstockimages/356563760.jpg"  class="img-responsive img-thumbnail" style="padding:15px"/>
+		<br><br>
+		<button type="button" class="btn btn-info" data-toggle="collapse" 
+		 data-target="#pack2">Package Snapshot</button>
+		<div id="pack2" class="collapse" style="padding:15px">
+			<strong> No. of packages: </strong> 2 <br>
+			<strong> Average cost: </strong> Rs.40,000.00 <br>
+		</div>
+		</div>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br>
+	</div>
+
+
+
+</body>
+</html>
