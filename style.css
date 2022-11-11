@@ -1,117 +1,143 @@
-body{
+body {
     background-color: #F6F3F2;
-    font-family:'Calibri';	
+    font-family: 'Calibri';
 }
-.gridbordergrey
-{
+
+.gridbordergrey {
     border: 5px solid #F6F2F2;
 }
-#header {
-    height: 50px;
-    background: linear-gradient(to right,  orange, white , green);
-    box-shadow: 0 3px 5px 0 rgba(148,148,148,0.88);
- }
-p{
-    font-size:18px;
-}
-.fullwidth
-{
-    width:100%;	
-}	
-.topic
-{
-position: relative;
-margin-top: -105px; 
-margin-left:20px; 
-margin-right:20px;
-background-color:#F6F3F2; 
-z-index:1000;
-border: 5px solid #FCFAFA; 
-border-radius: 5px;
-}
-.orangeHeader
-{
-background-color: rgb(248, 153, 45);z-index:1000;padding: 5px 5px;
-}
-.whitebackground
-{
-    background-color:white;
-}
-.whiteborder{
-    border: 5px solid white;
-}
-body{
-    font-family:'Calibri';	
-    background-color: #F6F3F2;		
-}
-#header {
-    height: 50px;
-    background: linear-gradient(to right,  orange, white , green);
-    box-shadow: 0 3px 5px 0 rgba(148,148,148,0.88);
- }
-p{
-    font-size:18px;
-}
-.fullwidth
-{
-    width:100%;	
-}	
 
-#imgGallery
-{
-width: 95%;
-background: #fff;    
-border: 5px solid red;
-z-index: 10;
-margin: 0 auto;
+#header {
+    height: 50px;
+    background: linear-gradient(to right, orange, white, green);
+    box-shadow: 0 3px 5px 0 rgba(148, 148, 148, 0.88);
 }
-.whitebackground
-{
-    background-color:white;
+
+p {
+    font-size: 18px;
 }
-.whiteborder{
+
+.fullwidth {
+    width: 100%;
+}
+
+.topic {
+    position: relative;
+    margin-top: -105px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #F6F3F2;
+    z-index: 1000;
+    border: 5px solid #FCFAFA;
+    border-radius: 5px;
+}
+
+.orangeHeader {
+    background-color: rgb(248, 153, 45);
+    z-index: 1000;
+    padding: 5px 5px;
+}
+
+.whitebackground {
+    background-color: white;
+}
+
+.whiteborder {
     border: 5px solid white;
 }
- .form-control:focus {
+
+body {
+    font-family: 'Calibri';
+    background-color: #F6F3F2;
+}
+
+#header {
+    margin-top: 100px;
+    height: 50px;
+    background: linear-gradient(to right, orange, white, green);
+    box-shadow: 0 3px 5px 0 rgba(148, 148, 148, 0.88);
+}
+
+p {
+    font-size: 18px;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+#imgGallery {
+    width: 95%;
+    background: #fff;
+    border: 5px solid red;
+    z-index: 10;
+    margin: 0 auto;
+}
+
+.whitebackground {
+    background-color: white;
+}
+
+.whiteborder {
+    border: 5px solid white;
+}
+
+.form-control:focus {
     border-color: #ff80ff;
     box-shadow: 0px 1px 1px orange inset, 0px 0px 8px green;
 }
-#header header{
-    padding:4px;
+
+#header header {
+    padding: 4px;
 }
-#header h3{
-    margin-top:10px; font-weight: 900; text-align:center;
+
+#header h3 {
+    margin-top: 10px;
+    font-weight: 900;
+    text-align: center;
 }
-#aboutIndia{
-    margin-top:20px; font-weight: 400; text-align:left;
+
+#aboutIndia {
+    margin-top: 20px;
+    font-weight: 400;
+    text-align: left;
 }
-#content div{
-    background-color:white
+
+#content div {
+    background-color: white
 }
-.greybg
-{
-background-color: #F6F3F2;
-padding: 10px;
+
+.greybg {
+    background-color: #F6F3F2;
+    padding: 10px;
 
 }
 
-.s1{		
+.s1 {
     cursor: pointer;
-    }
-.faq{
-    background-color: rgb(248, 153, 45);z-index:1000;
-            padding: 5px 5px;
+}
+
+.faq {
+    background-color: rgb(248, 153, 45);
+    z-index: 1000;
+    padding: 5px 5px;
 }
 
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
 
-  margin: auto;
+    margin: auto;
 }
 
-.page{
-  position: relative;
-margin-top: 65px; margin-left:20px; margin-right:20px;
-background-color:#F6F3F2; z-index:1000;border: 5px solid #FCFAFA; border-radius: 5px";
+.page {
+    position: relative;
+    margin-top: 65px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #F6F3F2;
+    z-index: 1000;
+    border: 5px solid #FCFAFA;
+    border-radius: 5px";
+
 }
